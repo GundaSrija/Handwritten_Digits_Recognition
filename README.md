@@ -1,139 +1,123 @@
-# 📝 Handwritten Digit Recognition (MNIST Dataset)
+📘 Handwritten Digit Recognition (MNIST Dataset)
 
-A deep learning project that recognizes handwritten digits (0–9) using a Convolutional Neural Network (CNN).  
-This project is built with **Python**, **TensorFlow/Keras**, and trained on the popular **MNIST dataset**.
+A deep-learning project that recognizes handwritten digits (0–9) using a Convolutional Neural Network (CNN).
+Built with Python, TensorFlow/Keras, and trained on the MNIST dataset.
 
----
+🎯 Features
 
-## 📌 Project Overview
+✔️ Loads & preprocesses MNIST dataset
 
-Handwritten digit recognition is a classic machine learning problem used to teach image classification and neural network concepts.  
-This project builds a **CNN model** that can automatically recognize digits written by humans.
+✔️ Builds a Convolutional Neural Network
 
----
+✔️ Trains and evaluates the model
 
-## 🎯 Features
+✔️ Predicts digits from custom images
 
-- ✔️ Loads & preprocesses MNIST dataset  
-- ✔️ Builds a Convolutional Neural Network  
-- ✔️ Trains and evaluates the model  
-- ✔️ Achieves high accuracy  
-- ✔️ Predicts digits from custom images  
-- ✔️ Includes visualization of training loss & accuracy  
+✔️ Visualizes training accuracy and loss
 
----
+✔️ Achieves ~98–99% accuracy
 
-## 🧠 Model Architecture
+🧠 Model Architecture
 
-The CNN consists of:
+The CNN contains:
 
-- 2 Convolution layers  
-- MaxPooling layer  
-- Flatten layer  
-- Dense hidden layers  
-- Output layer with Softmax activation
+2 Convolution Layers
 
-This architecture helps the model learn spatial patterns in handwritten digits.
+MaxPooling Layer
 
----
+Flatten Layer
 
-## 📂 Project Structure
+Dense Hidden Layers
+
+Softmax Output Layer
+
+This structure extracts spatial features from handwritten digits efficiently.
+
+📂 Project Structure
 Handwritten_Digits_Recognition/
 │
-├── dataset/ # MNIST dataset (loaded automatically)
-├── models/ # Saved trained model (.h5)
-├── images/ # Custom test images
-├── handwritten_digit_recognition.py
-├── prediction.py # For predicting custom digit images
-├── requirements.txt
+├── dataset/                          # MNIST dataset (downloaded automatically)
+├── models/                           # Saved trained model (.h5)
+├── images/                           # Custom test images
+│
+├── handwritten_digit_recognition.py  # Main training script
+├── prediction.py                     # Script for predicting digit images
+├── requirements.txt                  
 └── README.md
 
----
-
-## 🚀 How to Run the Project
-
-### **1️⃣ Install dependencies**
-
+🚀 How to Run the Project
+1️⃣ Install dependencies
 pip install -r requirements.txt
 
-### **2️⃣ Train the model**
+2️⃣ Train the Model
+python handwritten_digit_recognition.py
 
+3️⃣ Predict a Custom Digit
 
-### **3️⃣ Predict a custom digit**
-Place your image in the `images/` folder and run:
+Place any digit image (28x28 or larger) into /images/ and run:
 
 python prediction.py
 
----
+📊 Example Output
 
-## 📊 Output Example
+Training Accuracy/Loss plots
 
-- Training accuracy and loss graphs  
-- Model accuracy displayed in terminal  
-- Predicted digit printed with confidence  
+Final test accuracy
 
----
+Model predictions printed in terminal
 
-## 🧪 Sample Predictions
+Example prediction:
 
-The model can accurately classify digits from custom input images such as:
+Predicted Digit: 7
+Confidence: 98.32%
 
-- 0 → correctly predicted as **0**  
-- 7 → correctly predicted as **7**  
-- 9 → correctly predicted as **9**
+📈 Accuracy
+Metric	Value
+Training Acc	~99%
+Test Acc	~98%
+🛠️ Technologies Used
 
----
+Python
 
-## 📈 Accuracy
+TensorFlow / Keras
 
-Typical training results (may vary):
+NumPy
 
-| Metric       | Value |
-|--------------|-------|
-| Training Acc | ~99%  |
-| Test Acc     | ~98%  |
+Matplotlib
 
----
+OpenCV (for image loading)
 
-## 🛠️ Tech Stack
+📥 Dataset Info
 
-- **Python**
-- **TensorFlow / Keras**
-- **NumPy**
-- **Matplotlib**
-- **OpenCV** (optional for custom images)
+This project uses the MNIST dataset, which includes 70,000 handwritten digit images (28×28 grayscale).
 
----
-
-## 📥 Dataset
-
-This project uses the **MNIST digits dataset**, which contains **70,000 labeled images** of handwritten digits.  
-It is automatically downloaded from Keras:
-
+Loaded directly using:
 
 from tensorflow.keras.datasets import mnist
-📌 Future Improvements
 
-Add GUI for drawing digits
+🔮 Future Enhancements
 
-Deploy model to a web application
+Add a GUI for drawing digits
 
-Improve accuracy with deeper CNN
+Deploy using Flask / FastAPI
 
-Add training data augmentation
+Improve performance with deeper CNN
+
+Add data augmentation
+
 🤝 Contributing
 
-Contributions are welcome!
-Feel free to submit issues or pull requests.
-**📄 License
+Contributions, issues, and pull requests are welcome!
 
-This project is licensed under the MIT License.**
+📄 License
 
-**💡 Author
+This project is licensed under the MIT License.
+
+👩‍💻 Author
 
 Gunda Srija
 🔗 GitHub: https://github.com/GundaSrija
 
-🔗 Website: https://srija-gunda-xsysw4z.gamma.site/
+🔗 Website: https://srija-gunda-xsysw4z.gamma.site
 
-🔗 LinkedIn: https://www.linkedin.com/in/srijagunda**
+🔗 LinkedIn: https://www.linkedin.com/in/srijagunda
